@@ -1,9 +1,4 @@
-/**
-* Template Name: Folio - v4.7.0
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -33,9 +28,7 @@
     }
   }
 
-  /**
-   * Easy on scroll event listener 
-   */
+  
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
@@ -79,7 +72,6 @@
   }
 
   /**
-   * Toggle .header-scrolled class to #header when page is scrolled
    */
   let selectHeader = select('#header')
   if (selectHeader) {
@@ -120,7 +112,6 @@
   })
 
   /**
-   * Mobile nav dropdowns activate
    */
   on('click', '.navbar .dropdown > a', function(e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
@@ -130,7 +121,6 @@
   }, true)
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
